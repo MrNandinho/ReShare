@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="../CSS/bootstrap.css">
+
+    <!-- LIGAÇÃO AOS FICHEIROS DE ESTILOS PRÓPRIOS -->
+    <link rel="stylesheet" href="../CSS/estilos.css">
+    <title>Criar conta 2 </title>
+     
+</head>
+<body class="landing-page">
+    <header>
+        <img src="../ASSETS/resharelogo.png" alt="logo" />
+        <button id="backButton" class="back-button2" onclick="goBack()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16">
+                <path d="M10 12.796V3.204L4.519 8zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753"/>
+            </svg>
+        </button>
+        
+    </header>
+
+
+    <main>
+        <div class="bg-claro p-4 rounded"> 
+            <h2>Criar conta</h2>
+            <form id="formulario2" action="login.html" method="get">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Insira o seu email" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Insira a sua senha" required>
+
+                <div class="checkbox-container">
+                    <input type="checkbox" id="remember-me" name="remember-me">
+                    <label for="remember-me">Lembra-me</label>
+                </div>
+
+                <button type="submit" class="btn-submit" id="botao2">Criar conta</button>
+            </form>
+        </div>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>

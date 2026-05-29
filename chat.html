@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chat</title>
+
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+
+    <!-- LIGAÇÃO AOS FICHEIROS DE ESTILOS PRÓPRIOS -->
+    <link rel="stylesheet" href="../CSS/estilos.css">
+
+    <!-- Ícones do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <img src="../ASSETS/reshare.png" alt="logo" />
+        <button id="backutton3" class="back-button" onclick="goBack()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16">
+                <path d="M10 12.796V3.204L4.519 8zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753"/>
+            </svg>
+        </button>
+        
+    </header>
+<div class="chat-container">
+    <!-- Cabeçalho -->
+    <div class="chat-header">
+        <img src="../ASSETS/user.png" height="64px" alt="User">
+        <div class="user-info">
+            <h6>Martim Carvalho</h6>
+            <a href="#" class="text-decoration-none">toque para ver perfil</a>
+        </div>
+    </div>
+    <!-- Mensagens -->
+    <div class="chat-messages">
+        <div class="message sent">
+            <div class="content">Olá Martim, tudo bem?</div>
+        </div>
+        <div class="message received">
+            <img src="../ASSETS/user.png" height="64px" alt="User">
+            <div class="content">Olá Clara, tudo bem e consigo?</div>
+        </div>
+        <div class="message sent">
+            <div class="content">Comigo também, estava interessada no sofá, pode me dizer o tamanho por favor?</div>
+        </div>
+        <div class="message received">
+            <img src="../ASSETS/user.png" height="64px" alt="User">
+            <div class="content">Claro que sim, o sofá tem apenas 2 anos e pouco uso. Tem 80cm de altura por 250cm de
+                comprimento.
+                Posso enviar mais fotos se assim desejar.
+            </div>
+        </div>
+        <div class="message sent">
+            <div class="content">Sim, agradeço.</div>
+        </div>
+    </div>
+
+    <!-- Input -->
+    <div class="chat-input">
+        <input type="text" class="form-control" placeholder="Escreva aqui a sua mensagem">
+        <button><i class="bi bi-send-fill"></i></button>
+    </div>
+</div>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</html>
